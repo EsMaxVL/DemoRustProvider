@@ -1,0 +1,22 @@
+[package]
+name = "bs-dataprovider"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+bs-common = { path = "../bs-common" }
+thiserror = "1.0"
+async-trait = "0.1.53"
+web3 = { version = "0.18", default-features = false, features = [
+    "http-rustls-tls",
+] }
+solana-account-decoder = "1.10"
+solana-client = "1.10"
+serde_json = "1.0.79"
+serde = "1.0.136"
+uuid = "0.8.2"
+digest = "0.10.3"
+anyhow = "1.0.61"
+log = "0.4.17"
+solana-sdk = "1.10"
+base64 = "0.13.0"
